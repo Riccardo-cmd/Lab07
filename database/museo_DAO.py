@@ -15,7 +15,7 @@ class MuseoDAO:
     # TODO
 
     def get_all_musei(self):
-        cnx = ConnessioneDB().get_connection()
+        cnx = ConnessioneDB.get_connection()
 
         cursor = cnx.cursor()
         cursor.execute("SELECT * FROM museo")
